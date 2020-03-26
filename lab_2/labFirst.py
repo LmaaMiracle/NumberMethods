@@ -88,7 +88,7 @@ def sugarPriceAndAmount():
 def getMinElementAndItsIndex(a, b, c, d, e):
     array = [a, b, c, d, e]
 
-    return "Min element is %d. Its index is %d" % (min(array), array.index(min(array)) + 1)
+    return "Min element is %d. Its position is %d" % (min(array), array.index(min(array)) + 1)
 
 
 # print(tripleDivideExpressionFirstTask(7))
