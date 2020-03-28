@@ -78,8 +78,9 @@ def sugarPriceAndAmount():
     if (anotherPriceForKg < 0):
         return "Invalid input"
 
-    return "Amount of sugar after new batch of sugar is %d, for the price %d for 1 kg" \
-           % (amount + additionalAmount, (amount * priceForKg) + (additionalAmount * anotherPriceForKg))
+    return "Amount of sugar after new batch of sugar is %d, for the price %.2f for 1 kg" \
+           % (amount + additionalAmount,
+              (((amount * priceForKg) + (additionalAmount * anotherPriceForKg)) / (amount + additionalAmount)))
 
 
 # Задание 7
